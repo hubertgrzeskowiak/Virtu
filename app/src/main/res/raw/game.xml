@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<story>
+    <characters>
+        <character id="jen">
+            <name>Jen</name>
+            <image>blonde_smile.png</image>
+            <status>Hey there! I am using Virtú.</status>
+        </character>
+        <character id="example">
+            <name>E. Xample</name>
+            <image>example.png</image>
+        </character>
+    </characters>
+
+    <screenplay>
+        <message from="jen" id="start"
+        >Hi, I know you don't know me, but I saw you in school the other day and I just wanted to ask how it's going.</message>
+        <inquiry target="jen">
+            <choice result="interested">Umm hi, who are you?</choice>
+            <choice result="passive">Good, thx.</choice>
+        </inquiry>
+
+        <message from="jen" id="interested" to="you">hihi</message>
+        <message from="jen">oh right</message>
+        <message from="jen">my name is Jenny but my friends call me Jen</message>
+        <message from="you" to="jen">Nice to meet you, Jen</message>
+        <message from="jen">:-D</message>
+        <inquiry>
+            <choice result="didn't meet yet">we didn't meet in school, did we?</choice>
+            <choice result="ask for photo">Can I have a photo of you?</choice>
+        </inquiry>
+
+        <message from="jen" id="passive">cool</message>
+        <message from="jen">i saw you in the football club yesterday</message>
+        <message from="jen">you were quite good! your final goal was really impressive</message>
+        <inquiry>
+            <choice result="not interested">aha</choice>
+            <choice result="interested">Thanks! I didn't know I have groupies</choice>
+        </inquiry>
+
+        <message from="jen" id="not interested">sorry, didn't mean to annoy you...</message>
+        <message from="jen">you seem to be busy</message>
+        <inquiry>
+            <choice result="no date">Yeah, sry</choice>
+            <choice result="interested">Nah, it's okay. So who are you actually?</choice>
+        </inquiry>
+
+        <message from="jen" id="no date">well, okay</message>
+        <message from="jen">maybe another time then. cya</message>
+        <end/>
+
+        <message from="jen" id="didn't meet yet">
+            no, although I saw you a few times already. You probably didn't notice me.
+        </message>
+        <inquiry>
+            <choice result="ask for photo">Can I have a photo of you?</choice>
+            <choice result="small talk">So, how's goin</choice>
+        </inquiry>
+
+        <message from="jen" id="ask for photo">umm, give me a sec</message>
+        <!--<image from="jen">jen2.png</image>-->
+        <message from="jen">*** IMAGINE PHOTO HERE ***</message>
+        <message from="jen">Now I want one of you ^^</message>
+        <message from="jen">that would be only fair!</message>
+        <inquiry>
+            <choice result="do photo">k, let me take one</choice>
+            <choice result="like sweets">Maybe later... Do you like cookies?</choice>
+        </inquiry>
+
+        <message from="you" id="do photo">*** IMAGINE PHOTO HERE ***</message>
+        <message from="jen">I like that &lt;3</message>
+        <inquiry>
+            <choice result="ask for lunch">How about a lunch tomorrow</choice>
+            <choice result="small talk">So, how's goin?</choice>
+        </inquiry>
+
+        <message from="jen" id="ask for lunch">sure!</message>
+        <message from="jen" id="date">Cool, let's meet in the first break in the school café</message>
+        <message from="jen">See you there. xoxo</message>
+        <message from="you">Congratulations! You have a date!</message>
+        <end/>
+
+        <message from="jen" id="small talk">quite good. thx for asking &lt;3</message>
+        <message from="jen">I was just about to go out with a few friends and get some cake</message>
+        <message from="jen">Do you like cake?</message>
+        <inquiry>
+            <choice result="like sweets">Of course, who doesn't?!</choice>
+            <choice result="like sweets">I prefer cookies</choice>
+        </inquiry>
+
+        <message from="jen" id="like sweets">yeah! I luv em too!</message>
+        <message from="jen">maybe I'll get you some too and we have lunch in a break tomorrow?</message>
+        <inquiry>
+            <choice result="date">Sounds okay</choice>
+            <choice result="no date">I don't know...</choice>
+        </inquiry>
+
+    </screenplay>
+</story>

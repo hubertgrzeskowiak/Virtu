@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Virtù</string>
+    <string-array name="section_titles">
+        <item>CALLS</item>
+        <item>CHATS</item>
+        <item>CONTACTS</item>
+    </string-array>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".conversation.ConversationActivity"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/fragment_message_bubble_incoming"
+        android:layout_weight="1"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="140dip"
+        android:background="#ffffff"
+        android:elevation="100dp"
+        android:id="@+id/choices_dialog"
+        android:visibility="gone"
+        android:layout_weight="0"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/choice1"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="choice 1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:onClick="onChoice"
+                />
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dip"-->
+                <!--android:background="@android:color/holo_red_light"-->
+                <!--/>-->
+            <TextView
+                android:id="@+id/choice2"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="choice 2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:onClick="onChoice"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

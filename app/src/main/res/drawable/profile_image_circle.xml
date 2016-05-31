@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval">
+    <solid android:color="#cacaca"/>
+    <size android:width="@dimen/profile_image_size"
+          android:height="@dimen/profile_image_size"/>
+</shape>
