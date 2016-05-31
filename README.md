@@ -1,4 +1,6 @@
-# Virtù
+![logo](app/src/main/res/mipmap-hdpi/ic_launcher.png "Virtù logo") 
+#Virtù
+
 Framework for Android RPGs with look and feel of WhatsApp.
 
 Documentation coming soon.
