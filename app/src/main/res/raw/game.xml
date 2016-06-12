@@ -13,8 +13,9 @@
     </characters>
 
     <screenplay>
-        <message from="jen" id="start"
-        >Hi, I know you don't know me, but I saw you in school the other day and I just wanted to ask how it's going.</message>
+        <message from="jen" id="start">
+        Hi, I know you don't know me, but I saw you in school the other day and I just wanted to ask how it's going.
+        </message>
         <inquiry target="jen">
             <choice result="interested">Umm hi, who are you?</choice>
             <choice result="passive">Good, thx.</choice>

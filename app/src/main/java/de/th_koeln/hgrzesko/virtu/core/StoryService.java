@@ -49,7 +49,7 @@ public class StoryService extends Service {
     /**
      * This is incremented every time we send a new message using the AlarmManager.
      */
-    private int broadcastID = 1;
+    private int requestCode = 1;
 
     public final static String EXTRA_MESSAGE = "virtu.intent.extra.EXTRA_MESSAGE";
 
@@ -350,7 +350,7 @@ public class StoryService extends Service {
         Intent intent = new Intent(this, StoryService.class);
         intent.putExtra(EXTRA_MESSAGE, message);
         PendingIntent pendingIntent = PendingIntent.getService(
-                this, this.broadcastID++, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+                this, this.requestCode++, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         long wakeTime = System.currentTimeMillis() + 1000 * delaySeconds;
         Log.d("StoryService", "current time: " + String.valueOf(System.currentTimeMillis()));
         Log.d("StoryService", String.format("scheduling response at %s ", wakeTime));
